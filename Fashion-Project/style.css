@@ -1,0 +1,442 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+}
+body {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #332219;
+}
+
+
+/*Landing Page Design*/
+
+
+.landing-page {
+    background-image: url('images/header-bg.png');
+    background-color:white;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.landing-page:before { /* Overlay */
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(51, 34, 25,0.35)
+  
+  }
+  
+.landing-page * {
+    position: relative; /* Makes elements display above overlay. */
+ }
+.title-bar{
+    margin: 0;
+    padding: 0;
+    width: 35%;
+    height: 53px;
+    background-color: white;
+    opacity: 1; 
+    float: left;
+}
+h1.title {
+  width: 25%;
+  height: 100%        
+}
+.nav-bar{
+    margin: 0 35%;
+    padding: 0.5% 0;
+    width: 65%;
+    height: 53px;
+    background-color: white;
+    opacity: 1;
+}
+ul.nav-container {
+    list-style-type: none;
+    margin: 0.5% 0;
+    padding: 0;  
+}
+li.nav {
+    display: inline;  
+}
+.nav a {
+    padding: 10px 8px;
+    text-decoration: none;
+    color: #332219;
+    font-size: 15px;
+    float: right;
+}
+.nav a:hover{
+    background-color: #e0b15e;
+    color: white;
+} 
+
+.introduction {
+    margin: 10% 5%;
+    width: 45%;
+    height: 65%;
+    color: white; 
+    overflow: auto;
+}
+h1.heading {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+    text-align: center;
+      
+}
+p.subheading {
+    font-size: 17px;
+    font-family: serif;
+    text-align: center
+}
+p.lead-link {
+    font-weight: bold;
+    font-size: 13px;
+    text-align: center;
+}
+.start {
+    padding: 3% 0;
+    width: 20%;
+    text-decoration: none;
+    color: white;
+    background-color: #bc9c22;
+    opacity: 0.7;
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: 'monotype corsiva', Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+
+/*The code below deisgns the "What we do" section*/
+
+
+.how-it-works {
+    height: 100%;
+    background-color: white;
+}
+.steps-title {
+    width: 100%;
+    height: 10%;
+    color: #bc9c22;
+    opacity: 0.8;
+}
+.steps-title p{
+    margin: 0.5% 0;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    font-size: large;
+    font-weight: bold
+}
+.instruction {
+    margin: 0.25% 1.25%;
+    width: 30%;
+    height: 44%;
+    float: left;
+    color: #bc9c22;
+    /*border-radius: 100%;*/
+}
+.instruction img {
+    width: 25%;
+    height: 15%;
+    margin: 0 35%;
+    border-radius: 100%;
+}
+p.instruction-heading {
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: medium;
+}
+p.instruction-text {
+    text-align: center;
+    font-size: small;
+}
+
+
+/* Pricing Section Design*/
+
+
+.membership-info {
+    height: 90%;
+    width: 100%;
+    background-color: #bc9c22;
+}
+.pricing-title {
+    width: 100%;
+    height: 10%;
+}
+.pricing-title p {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: large;
+    color: white;
+    margin: 1.5% 0;
+    padding: 3% 0;
+}
+.site-about {
+    margin: 0;
+    padding: 2% 0.825%;
+    width: 30%;
+    height: 90%;
+    float: left;
+    color: white;
+    font-size: medium;
+}
+.site-about span {
+    font-weight: bold;
+    font-style: italic;
+}
+.about-start-button {
+    text-align: center;
+}
+.about-start {
+    padding: 5% 0;
+    width: 30%;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: medium;
+    border: none;
+    color: #bc9c22;
+    background-color: #332219;
+}
+.hover-button {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+  
+.hover-button:hover {
+    background-color: white; /* Green */
+    color: #bc9c22;
+}
+.pricing {
+    width: 70%;
+    height: 90%;
+    float: right;
+}
+.price-box {
+    margin: 5% 1.5%;
+    padding: 1% 3%;
+    width: 30%;
+    height: 80%;
+    background-color: #332219;
+    border-radius: 15%; 
+    float: left;
+}
+.price-box h4 {
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    color: white;
+    opacity: 0.7;
+}
+.price-box p {
+    text-align: center;
+    font-size: small;
+    color: white;
+    opacity: 0.7;
+}
+
+/*Pattern Section Design*/
+
+.pattern-section {
+    width: 100%;
+    height: 10%;
+}
+.patterns-title {
+    width: 100%;
+    height: 100%;
+    background-color: #332219;
+    padding: 1.25% 0;
+}
+.patterns-title p {
+    text-transform: uppercase;
+    font-size: large;
+    font-weight: bold;
+    color: #bc9c22;
+    text-align: center;
+}
+/*Pattern Image Design*/
+.categories {
+    height: 100%;
+    background-color: #332219;
+}
+.types {
+    width: 30%;
+    height: 48%;
+    margin: 0.425% 1.625%;
+    float: left;
+}
+.types p {
+    margin: 10% 10%;
+    padding: 0 20%;
+    width: 70%;
+}
+p.box-text {
+    margin: 40% 0;
+    padding: 4% 0;
+    width: 100%;
+    height: 20%;
+    background-color: #bc9c22;
+    color: white;
+    opacity: 0.7;
+    font-weight: bold;
+    font-size: small;
+    text-transform: uppercase;
+    text-align: center;
+}
+.box-text a {
+    text-decoration: none;
+    color: white;
+}
+.glamour {
+    background-image: url('images/formal.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.casual {
+    background-image: url('images/casual.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.work {
+    background-image: url('images/office.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.gym {
+    background-image: url('images/sport.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.reuse {
+    background-image: url('images/recycle.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.retro {
+    background-image: url('images/vintage.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*Video Section Design*/
+
+
+.video-section {
+    height: 70%;
+    background-color: #bc9c22;
+}
+.bernina-top {
+    width: 49%;
+    height: 100%;
+    float: left;
+    margin: 0 0.5%;
+    
+}
+.bernina-top p {
+    margin: 30% 2%;
+    color: white;
+}
+.bernina-top video {
+    margin: 4% 0 4% 2%;
+}
+
+/*Footer Section Design*/
+
+
+.footer {
+    height: 30%;
+    background-color: black;
+}
+.footer-table{
+    width: 100%;
+    height: 100%;
+}
+.row td {
+    padding: 0 1%;
+    width: 25%;
+    height: 78%;
+   
+}
+.right-border {
+    border-right: 0.5px solid white;
+    opacity: 0.7;
+}
+td.horizontal {
+    height: 10%;
+    text-align: center;
+}
+li.footer-link {
+    display: block;
+}
+li.footer-link a {
+    text-decoration: none;
+    color: white;
+    opacity: 0.7;
+    font-size: smaller;
+}
+.info h4 {
+    margin: 0;
+    padding: 0;
+    font-size: small;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    opacity: 0.7;
+}
+.info p {
+    font-size: smaller;
+    color: white;
+    opacity: 0.7;
+}
+.copyright h6 {
+    color: #bc9c22;
+    opacity: 0.7;
+}
+.instagram {
+    width: 5%;
+    height: 10%;
+}
+.facebook {
+    width: 5%;
+    height: 10%;
+}
+.twitter {
+    width: 5%;
+    height: 10%;
+}
+.whatsapp {
+    width: 5%;
+    height: 10%;
+}
+.subscribe {
+    width: 30%;
+    padding: 0.65% 0;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: small;
+    font-style: italic;
+    border: none;
+    color: #bc9c22;
+    background-color: #332219;
+}

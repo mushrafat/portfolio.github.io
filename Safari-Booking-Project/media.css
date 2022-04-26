@@ -1,0 +1,264 @@
+/************** Extra small devices (phones, 870px and down) ************/
+@media only screen and (max-width: 870px) {
+    header {
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    .logo {
+        flex-flow: column-reverse wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    .navigation {
+        flex-flow: column-reverse wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    .nav-style {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    .sub-link { 
+        border-bottom: 1px solid grey;
+        color: rgb(207, 207, 107);
+        text-decoration: none;
+        display: block;
+        text-transform: capitalize;
+        margin: 0.5% 0;
+        padding: 2% 0 1% 0;
+        z-index: 999;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    .drop-links {
+        display: flex;
+        flex-flow: column nowrap;
+        display: none;
+        position: relative;
+        width: 100%;
+        z-index: 10;
+        background-color: #2E4159;
+        border-top: 2px solid rgb(207, 207, 107);
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    .nav-style:hover .region {
+        display: flex;
+        flex-flow: row nowrap;  
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    .banner-heading {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    .sub-heading {
+        font-size: 0.75rem;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    .intro-text {
+        font-size: 0.325rem;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    .sub-intro-text {
+        font-size: 0.825rem;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    .banner-leads {
+        margin-top: 30%;
+    }
+}
+@media only screen and (max-width: 870px) {
+    .animted-text {
+        font-size: 0.4625rem;
+    }
+}
+@media only screen and (max-width: 870px) {
+    .segment:hover .animted-text {
+        font-size: 0.4625rem;
+    }
+}
+@media only screen and (max-width: 870px) {
+    .leads {
+        width: 100%;
+        height: 70%;
+        border: 1px solid red;
+        display: flex;
+        flex-flow: column wrap;
+    }
+}
+
+@media only screen and max-width: 870px) {
+    .lead-sub {
+        flex: 100%;
+    }
+}
+/************** Medium devices (landscape tablets, 768px and up) **********/
+@media only screen and (min-width: 870px) and (max-width: 1000px) {
+    header {
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        
+    }
+} 
+
+@media only screen and (min-width: 870px) and (max-width: 1000px) {
+    .logo {
+        flex-flow: column-reverse wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 870px) and  (max-width: 1000px) {
+    .navigation {
+        flex-flow: row-reverse wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 870px) and  (max-width: 1000px) {
+    .sub-link { 
+        border-bottom: 1px solid grey;
+        color: rgb(207, 207, 107);
+        text-decoration: none;
+        display: block;
+        text-transform: capitalize;
+        margin: 0.5% 0;
+        padding: 2% 0 1% 0;
+        z-index: 999;
+    }
+}
+
+@media only screen and (max-width: 870px) and  (max-width: 1000px) {
+    .drop-links {
+        display: flex;
+        flex-flow: column nowrap;
+        display: none;
+        position: relative;
+        width: 100%;
+        z-index: 10;
+        background-color: #2E4159;
+        border-top: 2px solid rgb(207, 207, 107);
+    }
+}
+
+@media only screen and (max-width: 870px) and  (max-width: 1000px) {
+    .nav-style {
+        position: relative;
+        text-decoration: none;
+        color: rgb(207, 207, 107);
+        border-right: 1px solid rgb(207, 207, 107);
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 13px;
+        /*border: 1px solid red;*/
+    }
+}
+
+@media only screen and (min-width: 870px) and  (max-width: 1000px) {
+    .banner-heading {
+        font-size: 1.425rem;
+    }
+}
+
+@media only screen and (min-width: 870px) and  (max-width: 1000px) {
+    .sub-heading {
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (min-width: 870px) and  (max-width: 1000px) {
+    .intro-text {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 870px) and  (max-width: 1000px) {
+    .sub-intro-text {
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (min-width: 870px) and  (max-width: 1000px) {
+    .banner-leads {
+        margin-top: 17%;
+    }
+}
+
+@media only screen and (min-width: 870px) and  (max-width: 1000px) {
+    .animted-text {
+        font-size: 0.625rem;
+    }
+}
+@media only screen and (min-width: 870px) and  (max-width: 1000px) {
+    .segment:hover .animted-text {
+        font-size: 0.625rem;
+    }
+}
+
+@media only screen and (min-width: 870px) and  (max-width: 1000px) {
+    .leads {
+        width: 100%;
+        height: 70%;
+        border: 1px solid red;
+        display: flex;
+        flex-flow: column wrap;
+    }
+}
+
+@media only screen and (min-width: 870px) and  (max-width: 1000px) {
+    .lead-sub {
+        flex: 100%;
+    }
+}
+
+   
+@media (max-width: 45em) {
+    .lead-sub .form-content,
+    .lead-sub label {
+      order: initial;
+    }
+   
+    .lead-sub label {
+      width: 100%;
+      margin-right: 0;
+      margin-top: 0.2rem;
+    }
+  }

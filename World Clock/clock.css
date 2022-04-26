@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #1f1f1f;
+}
+
+header {
+    width: 100%;
+    height: 40%;
+}
+
+header h1 {
+    width: 100%;
+    height: 15%;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-color: gray;
+    color: white;
+}
+
+.clockFrame {
+    position: relative;
+    width: 100%;
+    height: 85%;
+    background-color: #1f1f1f;
+}
+
+.localClock {
+    top: 0;
+    margin: 0 ;
+    padding: 0;
+    position: relative;
+    height: 100%;
+    width: 14%;
+    background-color: #1f1f1f;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.circle {
+    margin: 1.75% 15%;
+    position: relative;
+    width: 75%;
+    height: 70%;
+    border-radius: 50%;
+}
+
+.image {
+    height: 100%;
+    width: 70%;
+    margin-left: 35%;
+}
+
+.flag {
+    position: relative; 
+    width: 40%;
+    height: 27%;
+    float: left;
+    color: white;
+    text-align: center;
+}
+
+.info {
+    position: relative;
+    padding: 0%;
+    width: 60%;
+    height: 27%;
+    text-align: left;
+    color: white;
+    float: right;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: small;
+}
+
+.baseInfo {
+    position: relative;
+    padding: 0%;
+    width: 100%;
+    height: 27%;
+    text-align: center;
+    color: white;
+    float: right;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: small;
+}
+.country {
+    position: relative;
+    padding: 0%;
+    width: 100%;
+    height: 30%;
+    text-align: left;
+    color: white;
+    
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: small;
+}
+.day {
+    padding: 0%;
+    width: 100%;
+    height: 70%;
+    font-style: italic;
+    font-weight: lighter;
+    text-transform: capitalize;
+}
+
+.baseImage {
+    height: 100%;
+    width: 100%;
+}
+
+#baseClockDescription {
+    text-align: center;
+}
+
+
+.map {
+    position: relative;
+    width: 70%;
+    height: 70%;
+    background-color: #1f1f1f;
+    background-image: url('Images/world-map-146505.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    float: left;
+}
+
+.picker {
+    position: relative;
+    width: 30%;
+    height: 70%;
+    border-left: 1px solid green;
+    top: 0;
+    float: right;
+}
+
+.displayTime {
+    margin-left: 20%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    width: 60%;
+    height: 10%;
+    color: white;
+    text-transform: uppercase;
+    font-size: large;
+    font-weight: bold;
+
+}
+ 
+.dropDown {
+    margin-left: 5%;
+    margin-bottom: 2%;
+    width: 80%;
+    height: 12%;
+    
+}
+
+.clockCanvas {
+    width: 100%;
+    height: 100%;
+    padding: 3px;
+    border-radius: 100%;
+    /*Backgrond image declared multiple times to support cross browser compatibility*/
+    background-image: -moz-linear-gradient(270deg, #a59f9f 0%, #cac3c3 100%); /* ff3.6+ */
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a59f9f), color-stop(100%, #cac3c3)); /* safari4+,chrome */
+    background-image: -webkit-linear-gradient(270deg, #a59f9f 0%, #cac3c3 100%); /* safari5.1+,chrome10+ */
+    background-image: -o-linear-gradient(270deg, #a59f9f 0%, #cac3c3 100%); /* opera 11.10+ */
+    background-image: -ms-linear-gradient(270deg, #a59f9f 0%, #cac3c3 100%); /* ie10+ */
+    background-image: linear-gradient(180deg, #a59f9f 0%, #cac3c3 100%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a59f9f', endColorstr='#cac3c3',GradientType=0 ); /* ie6-9 */
+    
+    /*Border radius declared multiple times to support cross browser compatibility*/
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    text-shadow: 0px 1px 0px #00000080;
+    
+    /*Box shadow declared multiple times to support cross browser compatibility*/
+    -webkit-box-shadow: 0px 4px 0px #4d4949, 0px 2px 15px #00000066, inset 0px 1px 0px #ffffff4d, inset 0px 0px 2px #ffffff80;
+    -moz-box-shadow: 0px 4px 0px #4d4949, 0px 2px 15px #00000066, inset 0px 1px 0px #ffffff4d, inset 0px 0px 2px #ffffff80;
+    box-shadow: 0px 4px 0px #4d4949, 0px 2px 15px #00000066, inset 0px 1px 0px #ffffff4d, inset 0px 0px 2px #ffffff80;
+}
+
+.imgCanvas {
+    width: 100%;
+    height: 100%;
+    padding: 3px;
+    border-radius: 100%;
+}

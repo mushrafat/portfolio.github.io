@@ -1,0 +1,446 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Import fonts*/
+@font-face {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Merriweather Regular'), local('Merriweather-Regular'), url(https://fonts.gstatic.com/s/merriweather/v20/u-440qyriQwlOrhSvowK_l5-fCZM.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+@font-face {
+    font-family: 'Merriweather';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Merriweather Italic'), local('Merriweather-Italic'), url(https://fonts.gstatic.com/s/merriweather/v20/u-4m0qyriQwlOrhSvowK_l5-eRZOf-I.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Work Sans'), local('WorkSans-Regular'), url(https://fonts.gstatic.com/s/worksans/v4/QGYsz_wNahGAdqQ43Rh_fKDp.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+@font-face {
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Abril Fatface'), local('AbrilFatface-Regular'), url(https://fonts.gstatic.com/s/abrilfatface/v10/zOL64pLDlL1D99S8g8PtiKchq-dmjQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+}
+
+header {
+    /*border: 1px solid saddlebrown;*/
+    width: 100%;
+    height: 10%;
+}
+
+nav {
+    /*border: 1px solid salmon;*/
+    width: 100%;
+    height: 100%;
+}
+
+nav a {
+    position: relative;
+    text-decoration: none;
+    float: right;
+    margin: 0 1%;
+    padding: 1%;
+    text-transform: uppercase;
+    font-family: 'Merriweather', serif;
+    color: white; 
+}
+
+nav a:hover {
+    background-color: #8896BF;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    /*border: 1px solid saddlebrown;*/
+    background-color: black;
+    background-image: url("Images/main-bg.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+
+    
+}
+
+.heading {
+   
+    position: relative;
+    width: 40%;
+    height: 15%;
+    margin-top: 10%;
+    margin-left: 60%;
+    font-size: x-large;
+    text-transform: capitalize;
+    text-align: left;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.main-paragraph {
+    margin-top: 0;
+    margin-left: 60%; 
+    float: right;
+   
+    position: relative;
+    width: 40%;
+    height: 20%;
+    font-size: small;
+    text-align: left;
+    font-family: 'Merriweather', serif;
+    font-weight: lighter;
+}
+.main-paragraph span {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.btn-main {
+    
+    position: relative;
+    float: right;
+    margin-left: 32%;
+    margin-top: 0;
+    margin-right: 12%;
+    background-color: #333333;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1.3px;
+    padding: 16px 40px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.achievement {
+    width: 100%;
+    height: 20%;
+
+    background-color: #8896BF;
+}
+
+.achievement-div {
+    width: 24.7%;
+    height: 100%;   
+    display: inline-block;
+}
+.achievement-div p {
+    position: relative;   
+    width: 70%;
+    float: right;
+    height: 100%;
+    font-size: x-large;
+    padding-top: 5%;
+    padding-left: 4%;
+    text-transform: uppercase;
+    font-family: 'Merriweather-Regular', serif;
+    
+}
+i.target-icon {
+    padding-top: 5%;
+    position: relative;
+    float: left;
+    color: white;
+    font-size: 80px;    
+    width: 30%;
+    height: 100%;
+}
+
+.sdgs {
+    position: relative;
+    width: 100%;
+    height: 1200px;
+    background-color: #260101;
+}
+
+.sdg-div {
+    position: relative;
+    box-sizing: border-box;
+    width:25%;
+    height: 225px;
+    margin-bottom: 15px;
+    display: inline-block;
+  
+}
+
+.icon1 {
+    position: relative;
+    float: left;
+    background-image: url(Images/SDG-Icons/E_SDG\ goals_icons-individual-rgb-01.png);
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon2 {
+    position: relative;
+    float: left;
+    background-image: url(Images/SDG-Icons/E_SDG\ goals_icons-individual-rgb-02.png);
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon3 {
+    position: relative;
+    float: left;
+    background-image: url(Images/SDG-Icons/E_SDG\ goals_icons-individual-rgb-03.png);
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon4 {
+    position: relative;
+    float: left;
+    background-image: url(Images/SDG-Icons/E_SDG\ goals_icons-individual-rgb-04.png);
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon5 {
+    position: relative;
+    float: left;
+    background-image: url(Images/SDG-Icons/E_SDG\ goals_icons-individual-rgb-05.png);
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon6 {
+    position: relative;
+    float: left;
+    background-image: url(Images/SDG-Icons/E_SDG\ goals_icons-individual-rgb-06.png);
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon7 {
+    position: relative;
+    float: left;
+    background-image: url(Images/SDG-Icons/E_SDG\ goals_icons-individual-rgb-07.png);
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon8 {
+    position: relative;
+    float: left;
+    background-image: url(Images/SDG-Icons/E_SDG\ goals_icons-individual-rgb-08.png);
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon9 {
+    position: relative;
+    float: left;
+    background-image: url(Images/SDG-Icons/E_SDG\ goals_icons-individual-rgb-09.png);
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon10 {
+    position: relative;
+    float: left;
+    background-image: url(Images/SDG-Icons/E_SDG\ goals_icons-individual-rgb-10.png);
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon11 {
+    position: relative;
+    float: left;
+    background-image: url(Images/SDG-Icons/E_SDG\ goals_icons-individual-rgb-11.png);
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon12 {
+    position: relative;
+    float: left;
+    background-image: url(Images/SDG-Icons/E_SDG\ goals_icons-individual-rgb-12.png);
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon13 {
+    position: relative;
+    float: left;
+    background-image: url(Images/SDG-Icons/E_SDG\ goals_icons-individual-rgb-13.png);
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon14 {
+    position: relative;
+    float: left;
+    background-image: url(Images/SDG-Icons/E_SDG\ goals_icons-individual-rgb-14.png);
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon15 {
+    position: relative;
+    float: left;
+    background-image: url(Images/SDG-Icons/E_SDG\ goals_icons-individual-rgb-15.png);
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon16 {
+    position: relative;
+    float: left;
+    background-image: url(Images/SDG-Icons/E_SDG\ goals_icons-individual-rgb-16.png);
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon17 {
+    position: relative;
+    float: left;
+    background-image: url(Images/SDG-Icons/E_SDG\ goals_icons-individual-rgb-17.png);
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+p.center-text {   
+    position: relative;
+    margin: 30% 15%;
+    padding: 4% 0;
+    width: 70%;
+    height: 35%;
+    background-color: #260101;
+    color: white;
+    opacity: 0.7;
+    font-weight: bold;
+    font-size: small;
+    text-align: center;
+    -webkit-transition: font 1.3s, text 1.3s, height 1.3s, z-index 1.3s, opacity 1.3s,  margin 1.3s; /* For Safari 3.1 to 6.0 */
+    transition: height 1.3s, z-index 1.3s, opacity 1.3s, margin 1.3s transform;
+}
+p.center-text:hover {
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    opacity: 1;
+    margin: 0;
+    font-size: medium;
+    text-transform: uppercase;
+    padding-top: 20%;
+    
+}
+
+footer {
+    width: 100%;
+    height: 15%;
+    display: inline-block;
+}
+.links {
+    width: 50%;
+    height: 100%;
+    
+    position: relative;
+    float: left;
+}
+
+.links a {
+    text-decoration: none;
+    display: block;
+    font-size: small;
+    text-transform: uppercase;
+    font-family: "Merriweather", serif;
+    color: white;
+    padding-top: 0.5%;
+    margin-left: 5%;
+}
+a:hover {
+    color: #5f0f0f;
+}
+footer h6 {
+    position: relative;
+    float: right;
+    width: 50%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+    opacity: 0.7;
+    font-size: smaller;
+    padding-top: 6%;
+    text-align: left;
+}

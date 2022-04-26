@@ -1,0 +1,135 @@
+@media only screen and (min-width: 800px) {
+    /******************LANDING PAGE*******************/
+    nav {
+        flex-direction: row;
+    }
+
+    .logo {
+        width: 20%;
+    }
+
+    .logo img {
+        width: 70%;
+    }
+
+    .nav-links {
+        width: 80%;
+        flex-direction: row;
+        justify-content:flex-end;
+    }
+
+    .nav-links a {
+        width: 15%;
+    }
+
+    .banner {
+        padding: 12.5% 5%;
+    }
+
+    .landing-text {
+        font-size: 2rem;
+    }
+    
+    .landing-text-name {
+        font-size: 4rem;
+    }
+
+    /******************SKILLS SECTION*******************/
+    .skills-services-container {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .skills-services {
+        width: 30%;
+    }
+
+    .skills-services-two {
+        margin: 0;
+    }
+
+    /******************ABOUT SECTION*******************/
+    .about {
+        flex-direction: row;
+    }
+
+    .about-wrap {
+        flex-direction: row;
+    }
+
+    .about-left {
+        width: 45%;  
+        text-align: end;
+        justify-content: flex-end;
+    }
+
+    .about-right {
+        width: 55%;
+    }
+
+    .about-right h2,
+    .about-name {
+        text-align:  start;
+    }
+
+    .about-social-section {
+        width: 80%;
+    }
+
+    /******************RESUME SECTION*******************/
+    .resume {
+        flex-direction: row;
+    }
+
+    .resume-section {
+        width: 50%;
+    }
+
+    .left-resume-content{
+        margin: 0 0 2.5% 0;
+    }
+
+    .left-resume-content h3 {
+        width: 50%; 
+    }
+
+    .resume-button {
+        width: 50%;
+    }
+
+    /******************PORFOLIO SECTION*******************/
+    .portfolio-row-content {
+        width: 33%;
+        margin: 0;
+    }
+
+    /******************CONTACT SECTION*******************/
+    .contact-container {
+        flex-direction: row;  
+    }
+
+    .contact-image {
+        width: 50%;
+    }
+
+    .contact-image h1 {
+        font-size: 6rem;
+        margin: 0 auto;
+    }
+
+    .contact-form {
+        width: 50%;
+    }
+
+    .contact-form-main input[type="text"] { 
+        padding: 0 0 1% 0;
+    }
+
+    .contact-form-main input[type="textarea"] { 
+        padding: 0 0 15% 0;  
+    }
+
+    .contact-button {
+        width: 90%;
+    }
+}

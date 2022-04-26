@@ -1,0 +1,970 @@
+/********************LARGE SCREEN SIZE ****************/
+
+@media only screen and (min-width: 1200px) {
+    /***********************HEADER STYLING ***************************/
+    header {
+        height: 100vh;
+        z-index: 10;
+    }
+    
+    .header-container {
+        height: 100%; 
+        background-image: url('Images/banner.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        justify-content: flex-start; 
+        align-items: center;
+        align-content: space-between;
+        background-color: #1F2321;
+    }
+
+    .header-container:before { 
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); 
+    }
+      
+    .header-container * {
+        position: relative;
+    }
+
+    .nav-container {
+        height: 10%;
+        flex-flow: row wrap;
+        background-color: rgba(0, 0, 0, 0.125);
+    }
+
+    .logo {
+        width: 20%;
+        border-radius: 150px;
+    }
+
+    .logo img {
+        width: 70%;
+        height: 100%;
+    }
+    
+    nav {
+        width: 80%;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+    }
+
+    nav a {
+        width: 10%;
+        padding: 1.75% 0;
+    }
+
+    .large-intro {
+        position: relative;
+        /*border: 5px solid rgba(255,255,255,.70);*/
+        width: 80%;
+        height: 80%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: flex-start;
+        margin: 0% 0 0 0%;
+        padding: 0 0%;  
+        color: rgba(255, 255, 255, 0.702);
+        text-transform: capitalize;
+    }
+
+    .same-landing-intro{
+        font-size: 2rem;
+        line-height: 4;
+    }
+    
+    .landing-name {
+        font-size: 4rem;
+    }
+    
+    .banner {
+        display: none;
+    }
+/**************************SKILLS SECTION STYLING*************************************/
+    .skills {
+        height: 100vh;
+        background-color: /*#9CA692*/#1F2321;
+        padding: 0% 0;
+        /*border: 2px solid blue; */
+    }
+
+    .skill-intro {
+        height: 30%;
+        /*border: 1px solid yellow;*/
+        
+    }
+
+    .skill-intro h2 {
+        height: 60%;
+        /*border: 1px solid red;*/
+        padding: 5% 0 0 0;
+        font-weight: 700;
+        /*font-family: roboto-condensed, sans-serif; Montserrat, sans-serif*/
+    }
+    
+    .skill-intro p {
+        height: 40%;
+        /*border: 1px solid brown;*/
+    }
+
+    .skill-section{
+        height: 70%;
+        /*border: 1px solid blue;*/
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        
+    }
+
+    .skill-info {
+        width: 30%;
+        height: 96%;
+        /*border: 1px solid wheat;*/
+        text-align: center;
+    }
+
+    .about {
+        height: 100vh;
+        flex-flow: column wrap;
+        background-color: /*#9CA692*/#1B1A19;
+        padding-top: 0%;
+    }
+
+    .about-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        /*border: 1px solid brown;*/
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: flex-start;
+        background-color: #1B1A19;
+        padding: 6% 1.5% 4% 0;
+    }
+
+    .about-section {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+
+    .about-left {
+        /*border: 1px solid wheat;
+        background-image: url('Images/my-pic7.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right center;*/
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-end;
+        align-content: flex-end;
+        align-items: flex-end;
+        
+    }
+
+    .about-left img {
+        position: relative;
+        right: 0;
+        width: 40%;
+        height: 100%;
+        margin-right: 0%;
+        border-radius: 0px;
+        background-color: rgba(17, 17, 16, 0.6);
+        border: 5px solid rgba(17, 17, 16, 0.8);
+    }
+
+    .about-right {
+        /*border: 1px solid pink;  */
+    }
+    .about-right h2 {
+        /*border: 1px solid red;*/
+        width: 100%;
+        height: 5%;
+        padding: 0 0 0 0%;
+    }
+
+    .about-content {
+        position: relative;
+        width: 100%;
+       
+        /*border: 3px solid white;*/
+        margin: 0;
+        
+    }
+
+    .about-content-left {
+        height: 100%; 
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-end;
+        align-content: flex-end;
+        align-items: flex-end; 
+        padding: 0 ;
+    }
+
+    .about-content-right {
+        height: 95%;   
+    }
+
+    .about-social-section {
+        position: relative;
+        width: 90%;
+        height: 45%;
+        /*border: 1px solid yellow;*/
+        
+    }
+
+    .about-social-section p {
+       
+        margin: 2.5% 0 2.5% 5%;
+        padding-left: 37px;
+       
+    }
+
+    .social-media a {
+        text-decoration: none;
+        border: none;
+        
+    }
+    
+    .social-media i {
+        color: white;
+        font-size: 1rem;
+    }
+    
+
+    .resume {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        flex-flow: column wrap;
+        /*border: 2px solid gold;*/
+        background-color: /*rgba(248, 249, 235, 0.5)*/#1F2321;
+    }
+
+    .resume h2 {
+        height: 15%;
+        padding: 4.125% 0 0 2% ;
+    }
+
+    .resume-container {
+        height: 85%;
+        flex-flow: row wrap;
+        /*border: 1px solid red;*/
+        padding: 0 0 0% 0;
+    }
+
+    .left-resume {
+        width: 50%;
+        height: 100%;
+        position: relative;
+    
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .left-resume-content{
+        position: relative;
+        height: 45%;
+        width: 90%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        
+        margin: 0;
+        padding: 0 2% 0 2%;
+    }
+
+    .left-resume-content h3 {
+        width: 25%;
+        margin: 0;
+        padding: 1.5%;
+        background-color: /*#731616 #F29057*/ #7E4D2B;
+        
+    }
+
+    .left-resume-content h4 {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .cv-date {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .cv-text-detail {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .cv-experience{
+        
+        /*border: 1px solid hotpink;*/
+        
+    }
+    
+    .cv-qualification {
+        /*border: 1px solid tan;*/
+        
+    }
+    
+    .right-resume {
+        /*border: 1px solid white;*/
+        position: relative;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-flow: column wrap;
+        
+    }
+    
+    .cv-skills {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        flex-flow: column wrap;
+        /*border: 1px solid grey;*/
+    }
+
+    .right-resume-tabs {
+        height: 60%;
+        width: 90%;
+    
+    }
+
+    .right-resume-tabs label {
+        height: 15%;
+    }
+
+    .right-resume-tabs .tab {
+        height: 85%
+    }
+
+    .skills-tab-content {
+       height: 80%;
+    }
+
+    .cv-progress-bar span {  
+        width: 20%;
+    }
+
+    .html-css {
+        width: 75%;
+    }
+    
+    .javascript {
+        width: 50%;
+    }
+    
+    .php {
+        width: 73%;
+    }
+    
+    .dbms {
+        width: 70%;
+    }
+    
+    .wordpress {
+        width: 55%;
+    }
+
+    .communicate {
+        width: 70%;
+    }
+    
+    .team-work {
+        width: 75%;
+    }
+    
+    .self-motivation {
+        width: 73%;
+    }
+    
+    .speed {
+        width: 70%;
+    }
+
+    .resume-button {
+        width: 30%;
+    }
+    
+    .portfolio {
+        width: 100%;
+        height: 100vh;
+        /*border: 1px solid red;*/
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: flex-start;
+        background-color: /*#71736C*/#1B1A19;
+    }
+
+    .portfolio h2 {
+        width: 100%;
+        height: 15%;
+        /*border: 1px solid yellow;*/
+        padding: 5% 0 0 2%;
+    }
+
+    .portfolio-container {
+        width: 100%;
+        height: 85%;
+        /*border: 3px solid red;*/
+        padding: 0 0 3% 0;
+    }
+
+    .portfolio-row {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: space-around;
+        /*border: 5px solid yellow;*/
+    }
+
+    .portfolio-row-content {
+        position: relative;
+        width: 30%;
+        height: 45%;
+        /*border: 1px solid blue;*/
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .portfolio-project {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        /*border: 1px solid blue;*/
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .portfolio-image, .portfolio-image-text {
+        width: 100%;
+        height: 100%;  
+    }
+
+    .portfolio-image-text {
+        overflow-y: auto;  
+    }
+
+    .portfolio-project img {
+        width: 100%;
+        height: auto;
+    }
+
+    .portfolio-one {
+        
+        /*background-image: url('Images/fashion-project.bmp');*/
+        
+    }
+
+    .portfolio-two {
+       
+        /*background-image: url('Images/signup-project.bmp');*/
+       
+    }
+
+    
+    .blog {
+        height: 150vh;
+        /*border: 1px solid crimson;*/
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: flex-start;
+        background-color: #0D0D0D;
+        padding: 0;
+    }
+
+    .blog h2 {
+        position: relative;
+        width: 100%;
+        height: 10%;
+        
+        padding: 5% 0 0 2%;
+    }
+
+    .blog-row {
+        height: 90%;
+        justify-content: space-around;
+        padding: 0 2%;
+    }
+
+    .blog-container {
+        position: relative;
+        width: 100%;
+        height: 30%;
+        background-color: rgba(17, 17, 16, 0.6);
+        border: 3px solid rgba(17, 17, 16, 0.8);
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .blog-image {
+        position: relative;
+        width: 30%;
+        height: 100%;
+        /*border: 1px solid rosybrown;*/
+    }
+
+    .blog-image img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .blog-text-container {
+        position: relative;
+        width: 70%;
+        height: 100%;
+        /*border: 1px solid darkorange;*/
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        padding: 0%;
+    }
+    
+    .blog-title {
+        position: relative;
+        width: 97%;
+        height: 20%;
+        /*border: 1px solid cyan;*/
+    }
+    
+    .blog-date {
+        position: relative;
+        width: 97%;
+        height: 20%;
+        /*border: 1px solid firebrick;*/
+    }
+    
+    
+    .blog-text {
+        position: relative;
+        width: 97%;
+        height: 30%;
+        /*border: 1px solid darkorange;*/
+        padding: 1.5% 0%;
+    }
+    
+    
+    .blog-anchor {
+        position: relative;
+        width: 100%;
+        height: 30%;
+        /*border: 1px solid forestgreen;*/
+    }
+    
+    
+    .contact {
+        height: 80vh;
+        color: #731616;
+        /*border: 1px solid brown;*/
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: flex-start;   
+    }
+    .contact h2 {
+        position: relative;
+        /*border: 2px solid blue;*/
+        width: 100%;
+        height: 15%;
+        padding: 3.5% 0 0 2%;
+    }
+    .contact-container {
+        position: relative;
+        width: 100%;
+        height: 85%;
+        /*border: 1px solid bisque;*/
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: flex-start;
+        background-color: #0D0D0D;   
+        
+    }
+    
+    .contact-image {
+        position: relative;
+        width: 50%;
+        height: 100%;
+        /*border: 1px solid red;*/
+        display: flex;
+        flex-flow: column wrap;
+    }
+    
+    .contact-image img {
+        display: none;
+    }
+    
+    .contact-form {
+        position: relative;
+        width: 50%;
+        height: 100%;
+        /*border: 1px solid royalblue;*/
+        display: flex;
+        flex-flow: column wrap;
+        padding: 0 2% 0 0 ;
+    }
+
+    .contact-form-main {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        /*border: 1px solid rebeccapurple;*/
+        
+    }
+
+    .contact-form-main input[type="text"] { 
+        height: 7%;
+        padding: 0 0 1% 0;
+    }
+
+    .contact-form-main input[type="textarea"] {
+        
+        height: 30%;
+        
+        padding: 0 0 15% 0;
+       
+    }
+    
+    footer {
+        height: 20vh;
+        /*border: 1px solid whitesmoke;*/
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        background-color: #090909;
+    }
+
+    /*svg {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 100px;
+    }
+      
+    @media (max-width: 699px) {
+        .svg--lg {
+          display: none;
+        }
+    }
+      
+    @media (min-width: 700px) {
+        .svg--sm {
+          display: none;
+    }
+    */
+
+    
+    
+}
+
+
+/***************************** TABLET SCREEN SIZE ************************/
+
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+    /***********************HEADER STYLING ***************************/  
+    .header-container {
+        flex-flow: row wrap;
+    }
+
+    .logo {
+        width: 20%;
+    }
+
+    .nav-container {
+        flex-flow: row wrap;
+        align-items: flex-end;
+    }
+
+    nav {
+        width: 80%;
+        flex-flow: row wrap;
+    }
+
+    nav a {
+        width: 15%;
+        padding: 1.75% 0;
+    }
+
+    .large-intro {
+        display: none;
+    }
+
+    .same-landing-intro{
+        font-size: 1.75rem; 
+    }
+
+    .landing-name {
+        font-size: 3.5rem;
+    }
+
+    .skills{
+        /*border: 1px solid brown;*/
+       
+    }
+
+    .skill-section{
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+
+    .skill-info {
+        width: 30%;
+        align-items: center;
+        align-content: flex-start;
+       
+    }
+    
+    .about {
+        flex-flow: column wrap;
+        padding-top: 0%;
+    }
+
+    .about-container {
+        position: relative;
+        width: 100%;
+        /*border: 1px solid brown;*/
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: flex-start;
+        background-color: #1B1A19;
+    }
+
+    .about-section {
+        width: 50%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+
+    .about-section h2 {
+        position: relative;
+        width: 100%;
+    }
+
+    .about-social-section p {
+        position: relative;
+        color: rgb(194, 192, 195);
+        margin: 3.5% 0 3.5% 5%;
+        padding-left: 37px;
+        font-weight: 600;
+        letter-spacing: 0.7px;
+    }
+    
+
+    .social-media a {
+        text-decoration: none;
+        border: none;
+     
+       
+    }
+
+    .social-media i { 
+        color: white;
+        
+    }
+    
+    .left-resume {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .left-resume-content h3 {
+        width: 20%;
+       
+        
+    }
+
+    .cv-experience{
+        position: relative;
+        display: flex;
+        flex-flow: column wrap;
+        
+    }
+
+    .cv-qualification {
+        position: relative;
+        display: flex;
+        flex-flow: column wrap;
+        
+    }
+
+    .right-resume {
+        position: relative;
+        display: flex;
+        flex-flow: column wrap;
+        
+    }
+
+    .cv-skills {
+        position: relative;
+        display: flex;
+        flex-flow: column wrap;
+        
+    }
+
+    .cv-progress-bar span {
+        width: 20%;
+    }
+    
+    .portfolio {
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+ 
+    .portfolio h2 {
+        width: 100%;
+    }
+    
+  
+    
+    .portfolio-row {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+        margin: 0 0 2% 0;
+    }
+
+    .portfolio-row-content {
+        position: relative;
+        width: 50%;
+       
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    
+    .portfolio-project {
+        position: relative;
+        width: 100%;
+        
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    
+    
+
+    .blog-container {
+        position: relative;
+        width: 100%;
+        height: 30%;
+       
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .blog-image {
+        position: relative;
+        width: 30%;
+       
+    }
+    
+    .blog-text-container {
+        position: relative;
+        width: 70%;
+       
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .contact {
+        color: #731616;
+    } 
+
+    .contact-container {
+        position: relative;
+        width: 100%;   
+        
+        display: flex;  
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: flex-start;
+        background-color: #0D0D0D;   
+    }
+    
+    .contact-image {
+        position: relative;
+        width: 50%;
+       
+       
+        display: flex;
+        flex-flow: column wrap;
+    }
+    
+
+    
+    .contact-form {
+        position: relative;
+        width: 50%;
+        
+        
+        display: flex;
+        flex-flow: column wrap;
+    }
+    
+    footer {
+        /*border: 1px solid whitesmoke;*/
+        
+    }
+
+}

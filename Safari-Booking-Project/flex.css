@@ -1,0 +1,1128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #2E4159;
+    color: white;
+}
+
+header {
+   
+    display: flex;
+    flex-flow: row wrap;  
+}
+
+.logo {
+    flex: 10%;
+   
+}
+
+.logo-img {
+    width: 100%;
+    height: auto;
+}
+
+.navigation {
+    flex: 90%;
+    display: flex;
+    flex-flow: row-reverse wrap;
+   
+}
+.nav-style {
+    position: relative;
+    text-decoration: none;
+    color: rgb(207, 207, 107);
+    border-right: 1px solid rgb(207, 207, 107);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+    
+    /*border: 1px solid red;*/
+}
+.nav-style:hover {
+    background-color: rgba(11, 11, 24, 0.2);
+}
+.nav-style:active {
+    background-color: rgba(90, 90, 218, 0.2);
+}
+.drop-button {
+    
+    padding: 20px 10px 20px 10px;
+}
+.nav-spacing {
+    
+    padding: 20px 10px 20px 10px;
+}
+
+.drop-links {
+    display: flex;
+    flex-flow: column nowrap;
+    display: none;
+    position: absolute;
+    min-width: 100%;
+    width: 200%;
+    z-index: 10;
+    background-color: #2E4159;
+    border-top: 2px solid rgb(207, 207, 107);
+    margin: 0;    
+}
+.nav-style:hover .drop-links {
+    display: block;     
+}
+.region {
+    width: 500%;
+}
+.nav-style:hover .region {
+    display: flex;
+    flex-flow: row nowrap;  
+}
+.sub-link { 
+    border-bottom: 1px solid grey;
+    color: rgb(207, 207, 107);
+    text-decoration: none;
+    display: block;
+    text-transform: capitalize;
+    margin: 0%;
+    padding: 8% 0 3% 0;
+    z-index: 10;
+}
+.sub-link:hover {
+    font-weight: bold;
+    border-bottom: 1px solid yellow;
+}
+.countries {
+    display: flex;
+    flex-flow: column wrap;
+}
+.sub-region {
+    display: flex;
+    flex-flow: column wrap;
+}
+.sub-region {
+    position: relative;
+    float: left;
+    background-color: #2E4159;
+    width: 40%;
+}
+.region-title {
+    padding-top: 8%;
+    padding-left: 5%;
+    text-align: left; 
+    font-weight: bold;  
+}
+.southern-africa { 
+    margin-left: 7%;   
+}
+.country-name {
+    padding-top: 8%;
+    padding-bottom: 3%; 
+    margin-left: 10%;
+    color: rgb(207, 207, 107);
+    text-decoration: none;
+    border-bottom: 1px solid grey;
+    text-align: left;
+    text-transform: capitalize;   
+}
+.country-name:hover {
+    font-weight: bold;
+    border-bottom: 1px solid yellow;
+}
+.more {
+    position: relative;
+    line-height: 4;
+    margin-left: 10%;
+    text-transform: lowercase;
+    text-decoration: none;
+    text-decoration: underline;
+    color: rgb(207, 207, 107);
+}
+.more:hover {
+    font-weight: bold;   
+}
+.region-title {
+    padding-top: 8%;
+    padding-left: 5%;
+    text-align: left; 
+    font-weight: bold;  
+}
+/******************BANNER*****************/
+.banner {
+    display: flex;
+    flex-flow: column wrap;
+    height: 60%;
+    width: 100%;
+}
+.set-background {
+    position: relative;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+.defaultBanner {
+    height: 100%;
+    width: 100%;
+    background-image: url('Images/tourists.jpg'); 
+}
+
+.defaultBanner:before { 
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 65, 89, 0.45);  
+}
+  
+.defaultBanner * {
+    position: relative; /* Makes elements display above overlay. */
+}
+
+.caption-text {
+    position: relative;    
+    /*border: 1px solid grey;*/
+    width: 85%;
+    min-width: 30%;
+    min-height: auto;
+    color: white;
+    text-align: right;    
+}
+
+.banner-heading {
+    top: -100%;
+    left: 2%; 
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 2rem;
+    min-width: 10px;
+    min-height: 10px;
+    font-family: "Lobster", serif;
+    /*font-family: 'Oswald', sans-serif;
+    /*font-family: 'Raleway ExtraBold', sans-serif;*/
+    /* Safari, Chrome and Opera > 12.1 */
+    -webkit-animation: banner-heading 3s both;
+    -webkit-animation-delay: 0.5s;
+    /* Firefox < 16 */
+    -moz-animation: banner-heading 3s both;
+    -moz-animation-delay: 0.5s;
+    /* Internet Explorer */
+    -ms-animation: banner-heading 3s both;
+    -ms-animation-delay: 0.5s;
+    /* Opera < 12.1 */
+    -o-animation: banner-heading 3s both;
+    -o-animation-delay: 0.5s;
+    animation: banner-heading 3s both;
+    animation-delay: 0.5s;
+}
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes banner-heading {
+    100% { top: 30%; }
+}
+/* Firefox < 16 */
+@-moz-keyframes banner-heading {
+    100% { top: 30%; }
+}
+/* Internet Explorer */
+@-ms-keyframes banner-heading {
+    100% { top: 30%; }
+}
+/* Opera < 12.1 */
+@-o-keyframes banner-heading {
+    100% { top: 30%; }
+}
+@keyframes banner-heading {
+    100% { top: 30%; }
+}
+
+.catchy {
+    font-weight: bolder;
+    font-style: italic;
+    font-family: 'Raleway Black Italic', sans-serif;
+    color: rgb(207, 207, 107);
+}
+
+.sub-heading {
+    top: 35%;
+    left: -100%; 
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-style: italic;
+    text-transform: capitalize;
+    font-family: 'Alegreya Bold Italic', serif;
+    -webkit-animation: sub-heading 3s forwards;
+    -webkit-animation-delay: 5s;
+    -moz-animation: sub-heading 3s forwards;
+    -moz-animation-delay: 5s;
+    -ms-animation: sub-heading 3s forwards;
+    -ms-animation-delay: 5s;
+    -o-animation: sub-heading 3s forwards;
+    -o-animation-delay: 5s;
+    animation: sub-heading 3s forwards;
+    animation-delay: 5s;  
+}
+@-webkit-keyframes sub-heading {
+    100% { left: 2%; }
+}
+@-moz-keyframes sub-heading {
+    100% { left: 2%; }
+}
+@-ms-keyframes sub-heading {
+    100% { left: 2%; }
+}
+@-o-keyframes sub-heading {
+    100% { left: 2%; }
+}
+@keyframes sub-heading {
+    100% { left: 2%; }
+}
+
+.intro-text {
+    top: 35%;
+    right: -100%; 
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-style: italic;
+    text-transform: capitalize;
+    font-family: 'Alegreya Bold Italic', serif;
+    -webkit-animation: intro-text 3s forwards;
+    -webkit-animation-delay: 9.5s;
+    -moz-animation: intro-text 3s forwards;
+    -moz-animation-delay: 9.5s;
+    -ms-animation: intro-text 3s forwards;
+    -ms-animation-delay: 9.5s;
+    -o-animation: intro-text 3s forwards;
+    -o-animation-delay: 9.5s;
+    animation: intro-text 3s forwards;
+    animation-delay: 9.5s;  
+    
+}
+@-webkit-keyframes intro-text {
+    100% { right: -2%; }
+}
+@-moz-keyframes intro-text {
+    100% { right: -2%; }
+}
+@-ms-keyframes intro-text {
+    100% { right: -2%; }
+}
+@-o-keyframes intro-text {
+    100% { right: -2%; }
+}
+@keyframes intro-text {
+    100% { right: -2%; }
+}
+
+.join {
+    font-weight: bolder;
+    font-style: normal;
+    text-transform: uppercase;
+    color: rgb(207, 207, 107); 
+}
+
+.sub-intro-text {
+    /*border: 1px solid green;*/
+    bottom: -100%;
+    left: 2%; 
+    text-align: right;
+    font-family: 'Playfair Display Italic',serif;
+    font-weight: lighter;
+    text-transform: capitalize;
+    font-style: italic;
+    font-size: x-large;
+    /*line-height: 2;*/
+    -webkit-animation: sub-intro-text 3s both;
+    -webkit-animation-delay: 14s;
+    -moz-animation: sub-intro-text 3s both;
+    -moz-animation-delay: 14s;
+    -ms-animation: sub-intro-text 3s both;
+    -ms-animation-delay: 14s;
+    -o-animation: sub-intro-text 3s both;
+    -o-animation-delay: 14s;
+    animation: sub-intro-text 3s both;
+    animation-delay: 14s;
+}   
+@-webkit-keyframes sub-intro-text {
+    100% { bottom: -40%; }
+}
+@-moz-keyframes sub-intro-text {
+    100% { bottom: -40%; }
+}
+@-ms-keyframes sub-intro-text {
+    100% { bottom: -40%; }
+}
+@-o-keyframes sub-intro-text {
+    100% { bottom: -40%; }
+}
+@keyframes sub-intro-text {
+    100% { bottom: -40%; }
+}
+.banner-leads {
+    position: relative;
+    border: none;
+    border: 1px solid #2E4159;
+    padding: 1%;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.75rem;
+    background-color: rgb(207, 207, 107);
+    color: #2E4159;
+    cursor: pointer;
+    visibility: hidden;
+    margin-top: 12%;
+    margin-left: 45%;
+    -webkit-animation: fade-in 6s;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-delay: 17s;
+    -moz-animation: fade-in 6s;
+    -moz-animation-fill-mode: forwards;
+    -moz-animation-delay: 17s;
+    -ms-animation: fade-in 6s;
+    -ms-animation-fill-mode: forwards;
+    -ms-animation-delay: 17s;
+    -o-animation: fade-in 6s;
+    -o-animation-fill-mode: forwards;
+    -o-animation-delay: 17s;
+    animation: fade-in 6s;
+    animation-fill-mode: forwards;
+    animation-delay: 17s;    
+}
+@-webkit-keyframes fade-in {
+    0% { opacity: 0;}
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+@-moz-keyframes fade-in {
+    0% { opacity: 0;}
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+@-ms-keyframes fade-in {
+    0% { opacity: 0;}
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+@-o-keyframes fade-in {
+    0% { opacity: 0;}
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+@keyframes fade-in {
+    0% { opacity: 0;}
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+.banner-leads:hover {
+    text-decoration: underline;
+    transform: scale(1.2);
+    transition: all .3s ease-in-out;
+}
+.banner-leads:active {
+    background-color: blanchedalmond;
+}
+.banner-button-anchor {
+    text-decoration: none;
+    color: #2E4159;
+}
+
+/**********************ANIMATED SECTION**********/
+.itenary {
+    height: 30%;
+    width: 100%;
+    border: 1px solid #2E4159;
+    display: inline-block;  
+}
+
+.segment {
+	position: relative;
+    width: 20%;
+    height: 100%;
+    float: left;
+    border: 2px solid #2E4159;
+    cursor: pointer;
+    transition: all .5s cubic-bezier(.8,.5,.2,1.4);
+    overflow: hidden;
+}
+.one {
+    background-image: url('Images/lion.jpg');
+    color:white;
+    
+}
+.animted-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #2E4159;
+    text-align: center;
+    width:100%;
+    height:100%;
+    transition: all .7s ease-in-out;
+    padding: 20px;
+    box-sizing: border-box;
+    clip-path: inset(100% 0 100% 0); 
+}
+.segment:hover .animted-text {
+    left:0px;
+    transition: all .7s ease-in-out;
+    animation: 1s nextarrow;
+    clip-path: inset(0);
+}
+
+
+@keyframes nextarrow {
+    0% {
+        clip-path: polygon(20% 0%, 20% 0%, 20% 100%, 40% 100%, 40% 0%, 40% 0%, 40% 100%, 60% 100%, 60% 0%, 60% 0%, 60% 100%, 80% 100%, 80% 0%, 80% 0%, 80% 100%, 100% 100%, 100% 0%, 100% 0%, 100% 100%, 20% 100%);
+    }
+    100% {
+        clip-path: polygon(0% 0%, 20% 0%, 20% 100%, 20% 100%, 20% 0%, 40% 0%, 40% 100%, 40% 100%, 40% 0%, 60% 0%, 60% 100%, 60% 100%, 60% 0%, 80% 0%, 80% 100%, 80% 100%, 80% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+}
+
+.segment:hover {
+    transition: all .5s cubic-bezier(.8,.5,.2,1.4);
+    box-shadow: 0px 2px 3px rgba(0,0,0,.3);
+    transform: scale(1.2);
+    z-index: 9999;   
+}
+.two {
+    background-image: url('Images/elephant-2791964_640.jpg');    
+}
+
+.three {
+    background-image: url('Images/animal-3891305_1920.jpg');    
+}
+
+.four {
+    background-image: url('Images/buffalo.jpg');    
+}
+
+.five {
+    background-image: url('Images/leopard-515510_1920.jpg');    
+}
+/**************************FORM AND TABLE***********/
+.leads {
+    width: 100%;
+    height: 70%;
+    /*border-right: 1px solid red;*/
+    display: flex;
+    flex-flow: row wrap;
+}
+
+form {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    float: left;
+    border-left: 1px solid rgb(23, 33, 44);    
+}
+
+.tab-number {
+    background: rgba(11, 11, 24, 0.2); 
+    padding: 10px 25px;
+    /*border: 1px solid orangered;*/ 
+    /*margin-left: -1px; */
+    position: relative;
+    border-right: 1.5px solid rgba(11, 11, 24, 0.2);
+    border-bottom: 1px solid rgba(11, 11, 24, 0.2);  
+    border-right: 1px solid #2E4159;
+    border-radius: 1px
+    /*left: 1px; */
+}
+.tab-number:hover {
+    background: rgba(23, 33, 44,0.8);
+    z-index: 2;
+}
+.tab {
+    float: right;
+}
+.tab [type=radio] {
+    display: none;   
+}
+.form-content {
+    background-color: rgb(21, 30, 41);
+    border-top: 1px solid rgb(23, 33, 44); 
+}
+[type=radio]:checked ~ .tab-number {
+    background-color: rgb(21, 30, 41);
+    border-top: rgb(21, 30, 41);
+    border-bottom: rgb(21, 30, 41);
+    padding: 13px 25px;
+    z-index: 2;
+}
+[type=radio]:checked ~ .tab-number ~ .form-content {
+    z-index: 1;
+}
+/***************PERSONAL DETAILS TAB***********/
+.personal {
+    margin-top: 5%;
+    padding-top: 1%;
+    position: relative;
+    width: 20%;
+    height: 7%;
+    float: left;
+    text-align: right;
+    
+}
+.personal-input {
+    background-color: rgb(21, 30, 41);
+    margin-top: 5%;
+    position: relative;
+    border: none;
+    text-decoration: none;    
+    width: 60%;
+    height: 7%;
+    border: 1px solid white;
+    color: white;
+}
+
+.user-i {
+    position: relative;
+    border: 1px solid white;
+    height: 7%;
+    padding-top: 0.575%;
+    margin-left: 4%;
+    left: 0.825%;
+    transition: .1s;
+}
+.nationality {
+    margin-top: 5%;
+    position: relative;
+    border: none;
+    text-decoration: none;    
+    width: 40%;
+    height: 7%;
+    margin-left: 4.5%;
+}
+.personal-button {
+    position: relative;
+    border: none;
+    text-decoration: none;
+    margin-left: 45%;
+    margin-top: 3%;
+    background-color: rgb(21, 30, 41, 0.3);
+    border: 1px solid white;
+    padding: 13px 40px;
+    color: white;
+    
+}
+.personal-button:active  {
+    background-color: rgb(21, 30, 41);
+}
+.personal-button:hover  {
+    background-color: rgb(21, 30, 41);
+}
+.must {
+    color: red;
+    position: relative;
+    margin-left: 1%;
+}
+/*****************TRAVEL DETAILS TAB**********************/
+.travellers {
+    position: relative;
+    /*border: 1px solid red;*/
+    width: 90%;
+    height: 17%;
+    margin-left: 5%;
+    margin-bottom: 3%;
+    
+}
+.travel-questions {
+    /*border: 1px solid yellow;*/
+    text-align: center;
+    margin-bottom: 1.25%;   
+    text-transform: capitalize; 
+}
+
+
+.traveler-type {
+    position: relative;
+    border: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
+}
+.labl {
+    float: left;
+    width: 20%;
+    margin-top: 1%;
+    margin-left: 3%;
+    border: 1px solid white;
+    border-radius: 14px;
+    text-align: center;
+}
+.labl > input{ /* HIDE RADIO */
+    visibility: hidden; /* Makes input not-clickable */
+    position: absolute; /* Remove input from document flow */
+}
+.labl > input + .traveler-type{ /* DIV STYLES */
+    cursor:pointer;
+    border:2px solid transparent;
+}
+.labl > input:checked + .traveler-type{ /* (RADIO CHECKED) DIV STYLES */
+    color: rgb(10, 16, 22);
+    background-color: rgba(255, 255, 255, 0.6);   
+}
+
+.form-input-style {
+    color: rgb(21, 30, 41);
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border: 1px solid white;
+    text-decoration: none; 
+    
+}
+.age-verify {
+    width: 7%;
+    text-align: center; 
+}
+.alignment {   
+    margin-left: 25%;
+    color: rgba(255, 255, 255, 0.6);
+}
+.adult-kids { 
+    padding-right: 1%;
+    padding-left: 2%;
+    color: rgba(255, 255, 255, 0.6);
+}
+.proposed-date {
+    width: 50%;
+    line-height: 1.5;
+    text-align: left;
+}
+.expectation-question{
+    position: relative;
+    width: 90%;
+    height: 37%;
+    margin-left: 5%;
+    margin-bottom: 3%;
+}
+.expectations {
+    width: 70%;
+    height: 60%;
+    margin-left: 15%;
+}
+.italic-text {
+    font-weight: lighter;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.6);
+}
+/*****************COST DETAILS TABS**********************/
+.cost-travellers {
+    position: relative;
+    width: 95%;
+    height: 25%;
+    margin-left: 2%;
+    margin-bottom: 3%;
+    
+}
+.cost-travel-questions {
+    /*border: 1px solid yellow;*/
+    text-align: center;
+    margin-bottom: 1.25%;    
+}
+
+.cost-label {
+    float: left;
+    width: 22%;
+    margin-top: 1%;
+    margin-left: 2%;
+    border: 1px solid white;
+    border-radius: 14px;
+    text-align: center;
+}
+.cost-label > .cost-radio{ /* HIDE RADIO */
+    visibility: hidden; /* Makes input not-clickable */
+    position: absolute; /* Remove input from document flow */
+}
+.cost-label > .cost-radio + .cost-traveler-type{ /* DIV STYLES */
+    cursor:pointer;
+    border:2px solid transparent;
+}
+.cost-label > .cost-radio:checked + .cost-traveler-type{ /* (RADIO CHECKED) DIV STYLES */
+    color: rgb(10, 16, 22);
+    background-color: rgba(255, 255, 255, 0.6);  
+    border-radius: 14px; 
+}
+/*******************FLIGHT BOOKING**************/
+.flight-travellers {
+    position: relative;
+    width: 95%;
+    height: 25%;
+    margin-left: 2%;
+    margin-bottom: 3%;
+    
+}
+.flight-travel-questions {
+    /*border: 1px solid yellow;*/
+    text-align: center;
+    margin-bottom: 1.25%;    
+}
+
+.flight-label {
+    float: left;
+    width: 32%;
+    margin-top: 1%;
+    margin-left: 12%;
+    border: 1px solid white;   
+    text-align: center;
+}
+.flight-label > .flight-radio{ /* HIDE RADIO */
+    visibility: hidden; /* Makes input not-clickable */
+    position: absolute; /* Remove input from document flow */
+}
+.flight-label > .flight-radio + .flight-traveler-type{ /* DIV STYLES */
+    cursor:pointer;
+    border:2px solid transparent;
+}
+.flight-label > .flight-radio:checked + .flight-traveler-type{ /* (RADIO CHECKED) DIV STYLES */
+    color: rgb(10, 16, 22);
+    background-color: rgba(255, 255, 255, 0.6);     
+}
+/*****************PAYMENT TABS**********************/
+.payment {
+    margin: 1%;
+    padding-top: 1%;
+    position: relative;
+    width: 40%;
+    height: 7%;
+    float: left;
+    text-align: right;
+    opacity: 0.8;
+}
+.payment-input {
+    background-color: rgb(21, 30, 41);
+    margin: 1%;
+    position: relative;
+    border: none;
+    text-decoration: none;    
+    width: 30%;
+    height: 7%;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    color: white;
+}
+
+.card-date {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    position: relative;
+    border: none;
+    text-decoration: none;    
+    width: 12%;
+    height: 7%;
+    margin-left: 2%;
+}
+.payment-title {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.paypal-notice {
+    margin: 1% 0 1% 0;
+    padding-top: 1.25%;
+    padding-left: 1%;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    height: 10%;
+    opacity: 0.8;
+}
+span.notice {
+    font-weight: bold;
+    color: red;
+    opacity: 0.9;
+}
+.payment-button {
+    position: relative;
+    border: none;
+    text-decoration: none;
+    margin-left: 10%;
+    margin-top: 1%;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid white;
+    padding: 13px 40px;
+    color: rgb(21, 30, 41);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.payment-button:hover  {
+    background-color: white;
+    color:  rgb(21, 30, 41);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+/*****************BOOKING TABS**********************/
+.email-confirm {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    line-height: 2;
+    font-style: italic;
+    margin-bottom: 3%;
+    width: 85%;
+}
+.enter-email {
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 3%;
+}
+.email-confirm-input {
+    margin-left: 4%;
+    color:  rgb(21, 30, 41);
+    margin-bottom: 3%;
+}
+/*****************TABLE TABS**********************/
+.itenary-table {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    float: right;
+    border-right: 1px solid indianred;
+}
+.itenary-tab-label {
+    background: rgba(11, 11, 24, 0.2); 
+    padding: 10px 40px;
+    position: relative;
+    border-right: 1.5px solid rgba(11, 11, 24, 0.2);
+    border-bottom: 1px solid rgba(11, 11, 24, 0.2);
+    border-right: 1px solid #2E4159;  
+    border-radius: 1px
+}
+.itenary-tab-label:hover {
+    background: rgba(23, 33, 44,0.8);
+    z-index: 2;
+}
+.itenary-tab {
+    float: left;
+}
+.itenary-tab [type=radio] {
+    display: none;   
+}
+.itenary-content {
+    background-color: rgb(21, 30, 41);
+    border-top: 1px solid rgb(21, 30, 41); 
+}
+[type=radio]:checked ~ .itenary-tab-label {
+    background-color: rgb(21, 30, 41);
+    border-top: rgb(21, 30, 41);
+    border-bottom: rgb(21, 30, 41);
+    padding: 13px 40px;
+    z-index: 2;
+}
+[type=radio]:checked ~ .itenary-tab-label ~ .itenary-content {
+    z-index: 1;
+}
+
+.tabs {
+    position: relative;   
+    height: 98.75%;
+    width: 100%;
+    min-height: 200px; /* This part sucks */
+    /*border: 1px solid yellow;*/
+    clear: both;
+    margin: 0.5% 0;  
+}
+/****************************SEASONAL RATES TAB******************/
+.season-table {
+    margin: 2% 0 5% 5%;
+    width: 95%;
+    height: 70%;
+    
+    border-collapse: collapse;
+}
+
+thead {
+    border: 1px solid white;
+    
+}
+td {
+    border: none; 
+    text-align: center;  
+    border-left: 1px solid white;
+    
+}
+.season-rows {
+    border: 1px solid white;
+}
+.season-rows:hover {
+    border: 1px solid white;
+    color: rgb(23, 33, 44);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.season-thead-row td{
+   
+    line-height: 2;
+    text-transform: uppercase;
+}
+.even {
+    background-color: #2E4159;
+}
+tr:nth-child(3) { 
+    border-bottom: solid thin white; 
+    
+}
+.quote {
+    text-decoration: none;
+    color: rgb(207, 207, 107);
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+/******************************ITENARY TAB***********************/
+.tour-day-table {
+    margin: 4% 0 0 5%;
+    position: relative;
+    width: 95%;
+    height: 96%;
+    border: 1px solid white;
+}
+.tour-day-column {
+    
+    text-align: left;
+}
+.tour-day-row:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.column-title {
+    width: 10%;
+    text-align: center;
+}
+.content-column {
+    width: 30%;
+    text-transform: capitalize;
+}
+.tour-day-header{
+    line-height: 2;
+}
+.tour-day-header td {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.itenary-odd {
+    background-color: #2E4159;
+}
+.tour-day-footer {
+    text-align: center;
+    text-transform: capitalize;
+}
+/******************************INCLUSION TAB*********************/
+.inclusion-table {
+    margin: 0% 0% 0 0%;
+    position: relative;
+    width: 90%;
+    height: 95%;
+    border: 1px solid white; 
+}
+.inclusion-table td {
+    border: 1px solid white;
+}
+.empty-column {
+    border: none;
+}
+.inclusion-middle {
+    background-color: #2E4159;
+}
+.inclusion-table tr:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+/******************************SIGHTING TAB*********************/
+.sights-table {
+    margin: 2% 0 2% 4%;
+    position: relative;
+    width: 95%;
+    height: 85%;
+    border: 1px solid white;
+}
+
+.sights-table td {
+    border: 1px solid white;
+}
+.keynote {
+    margin: 1% 0 0 6%;
+}
+/******************************GENERAL STYLING*********************/
+
+.content {
+    position: absolute;
+    top: 28px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    border-top: 1px solid rgb(23, 33, 44); 
+    border-right: 1px solid #2E4159;
+}
+::placeholder {
+    position: relative;
+    color: rgba(245, 245, 245, 0.5);
+    left: 3%
+}
+
+
+/**********************FOOTER SECTION******************/
+footer {
+    margin-top: 0%; 
+    width: 100%;
+    height: 30%;
+    /*border: 1px solid gold;*/
+    display: inline-block;
+}
+
+.sub-footer {
+    position: relative;
+    width: 25%;
+    height: 100%;
+    float: left;
+    /*border: 1px solid orange;*/
+}
+.footer-content {
+    text-decoration: none;
+    color: rgb(207, 207, 107);
+    list-style-type: none;
+    margin: 0 0 0 25%;
+}
+.footer-content a{
+    text-decoration: none;
+    color: rgb(207, 207, 107);
+}
+
+.heading-footer-link {
+    margin: 8% 0 10% 0%;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.sub-heading-footer-link {
+    margin-bottom: 1.5%;
+    margin-left: 5%;
+}
+.sub-heading-footer-link a:hover {
+    color: rgb(23, 33, 44);
+}
+.subscribe-section {
+    position: relative;
+    margin: 15% 0 10% 0%;
+    color: rgb(207, 207, 107)
+}
+.input-field-subscribe {
+    text-decoration: none;
+    border: none;
+    border: 1px solid rgb(207, 207, 107);
+    background-color: white;
+}
+
+.italic-review {
+    position: relative;
+    font-size: small;
+    text-transform: capitalize;
+    font-style: italic;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login | Signup Page</title>
+    <link rel="stylesheet" href="Resources/CSS/style.css" type="text/css">
+    <link rel="stylesheet" href="Resources/CSS/media.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="main-page flex-style ">
+        <!--About Site Section-->
+        <div class="left-page page-division flex-style">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="Resources/Images/home-design-logo.png" alt="">
+                </a>
+            </div>
+            <div class="about-site">
+                <h4>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+					Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+					when an unknown printer took a galley of type and scrambled it to make a type specimen book
+                </h4>
+            </div>
+        </div>
+        <!--Form Section Section-->
+        <div class="right-page page-division flex-style">
+            <div class="login">
+                <form action="" method="POST" class="login-form flex-style">
+                    <div class="login-field flex-style">
+                        <i class="fa login-icon  fa-user fa-lg fa-fw"></i>
+                        <input type="text" class="login-details" name="username-text-field" placeholder="Username" required>
+                    </div>
+
+                    <div class=" login-field flex-style">
+                        <i class="fa login-icon  fa-lock fa-lg fa-fw"></i>
+                        <input type="password" class="login-details" name="password-text-field" placeholder="Password" required>
+                    </div>
+
+                    <input type="button" class="login-button" name="login-button" value="Login">
+                </form>
+            </div>
+
+            <div class="signup">
+                <form action="" method="POST" class="signup-form flex-style">
+                    <h4>Don't have an account? Sign up now</h4>
+
+                    <div class=" signup-field flex-style">
+                        <i class="fa signup-icon  fa-user fa-lg fa-fw"></i>
+                        <input type="text" class="signup-details" name="name-text-field" placeholder="Name" required>
+                    </div>
+
+                    <div class=" signup-field flex-style">
+                        <i class="fa signup-icon  fa-envelope fa-lg fa-fw"></i>
+                        <input type="email" class="signup-details" name="email-text-field" placeholder="Email" required>
+                    </div>
+
+                    <div class=" signup-field flex-style">
+                        <i class="fa signup-icon  fa-lock fa-lg fa-fw"></i>
+                        <input type="password" class="signup-details" name="password-text-field" placeholder="Enter Password" required>
+                    </div>
+
+                    <div class=" signup-field flex-style">
+                        <i class="fa signup-icon  fa-lock fa-lg fa-fw"></i>
+                        <input type="password" class="signup-details" name="re-password-text-field" placeholder="Retype Password" required>
+                    </div>
+
+                    <input type="button" name="signup-button" class="signup-button" value="Sign Up">
+
+                    <h5 class="signup-terms">
+                        By creating an account, you agree and accept our 
+                        <a href="">Terms</a> and <a href="">Privacy Policy</a>.
+                    </h5>
+                </form>
+            </div>
+
+            <footer class="flex-style">
+                <h5>Website template by M-Abdul</h5>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

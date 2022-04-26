@@ -1,0 +1,681 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+    background-color: #BF843B;
+    color: white;
+}
+/***********************HEADER STYLING ***************************/
+header {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.logo {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.logo img {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.logo-text {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+nav {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.nav-style {
+    position: relative;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    color: white;
+    text-align: center;
+    
+}
+
+.nav-style:hover {
+    background-color: #735229;
+    text-decoration: underline;
+}
+
+.nav-style:active {
+    background-color: #bf996b
+}
+
+.nav-spacing {
+    padding: 2.25% 2%;
+    width: 100%;
+}
+
+.sub-nav {
+    width: 100%;
+    padding: 2.25% 0%;
+}
+
+.sub-link {
+    text-decoration: none;
+    border: none;
+    color: white;
+    text-decoration: underline;
+}
+.drop-links { 
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    display: none;
+    position: absolute;
+    min-width: 100%;
+    z-index: 10;
+    background-color: #735229;
+    border-top: 2px solid white;
+    margin: 0;  
+    padding: 2.25% 0%;
+}
+.nav-style:hover .drop-links {
+    display: block; 
+    background-color: #735229;    
+}
+
+/*****************************BANNER STYLING**********************/
+.page-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.banner {
+    position: relative;
+    border: 1px solid white;
+    width: 100%;
+    height: 80%;
+    background-image: url('Images/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.banner:before { /* Overlay */
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.15);
+  
+}
+.banner * {
+    position: relative; /* Makes elements display above overlay. */
+}
+
+.login-form {
+    position: relative;
+    width: 50%;
+    /*height: 70%;*/
+    padding: 1%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: rgba(115, 82, 41, 0.5);
+    border: 1px dashed rgb(115, 82, 41);
+}
+
+.form-row {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center; 
+    /*border: 1px solid red;*/
+}
+
+.form-row span {
+    position: relative;
+    font-size: 1rem;
+    /*border: 1px solid yellow;*/
+    color: white;
+    text-transform: capitalize;
+    padding: 2% 0;
+    text-align: end;
+}
+
+.form-row input[type="text"] {
+    position: relative;
+    width: 60%;
+    border: none;
+    text-decoration: none; 
+    border: 1px solid #735229;  
+    margin: 2%;
+    padding: 0 3%; 
+}
+
+.login-button {
+    padding: 1% 15%;
+    font-size: 1rem;
+    background-color: white;
+    border: none;
+    text-decoration: none; 
+}
+
+.login-button a {
+    text-decoration: none;
+    border: none;
+    color: #735229;
+}
+
+/******************************COURSE PAGE STYLING*************************/
+/******************************TABLE SECTION STYLING*************************/
+.time-table {
+    position: relative;
+    /*border: 1px solid red;*/
+    width: 100%;
+    height: 90%; 
+    background-color: white;
+}
+
+.table-div {
+    position: relative;
+    width: 80%;
+    height: 90%;
+    /*border: 1px solid green;*/
+}
+
+.course-table {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #735229;
+    color: white;
+}
+
+.odd {
+    background-color: #735229;
+    border: none;
+}
+.odd:hover {
+    background-color: #291c0c;
+}
+.even:hover {
+    background-color: #291c0c;
+}
+.even {
+    background-color: #BF843B;
+}
+.session {
+    text-align: center;
+    height: 7%;
+}
+
+/******************************MEDIA PAGE STYLING*************************/
+/******************************EVENTS STYLING*************************/
+.events {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: /*#BF9D7E*/#2C2940;
+    font-size: 1rem;
+}
+
+
+.head-event {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.head-event-title {
+    position: relative;
+    text-transform: uppercase;
+    text-align: left;
+    width: 100%;
+    margin: 0 0 1% 0;
+}
+
+.head-event-image {
+    width: 100%;
+    position: relative;
+    height: 60%;
+}
+
+.head-event-image img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.head-event-text {
+    position: relative;
+    width: 100%;
+    height: 35%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: space-between;
+}
+
+.head-event-text h3 {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.head-main-text {
+    position: relative;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: lighter;
+    font-style: italic;
+    padding: 1% 0;
+}
+
+.head-date {
+    position: relative;
+    width: 100%;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    padding: 1% 0;
+    font-weight: bold;
+}
+
+.more-link {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding: 1% 0 0 0;
+}
+
+.more-link a {
+    position: relative;
+    text-decoration: none;
+    background-color: white;
+    padding: 1% 4%;
+}
+
+.more-link a:hover {
+    text-decoration: underline;  
+}
+
+.sub-event {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: white;
+    background-color: #A69286;
+    padding: 0 0 0 0.625%;
+}
+
+.sub-event-title {
+    position: relative;
+    width: 100%;
+    text-align: end;
+    text-decoration: none;
+    text-decoration: underline;
+    font-weight: lighter;
+}
+
+.sub-event-title a {
+    text-decoration: none;
+    color: white;
+}
+
+.sub-event-div {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    border: 1px solid white;
+    margin: 0 0 0.625% 0;
+}
+
+.sub-event-left {
+    position: relative;
+    width: 50%;
+}
+
+.sub-event-left img {
+    width: 100%;
+    height: auto;
+}
+
+.sub-event-one {
+    background-image: url('Images/medication.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+
+.sub-event-two {
+    background-image: url('Images/electrons.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+.sub-event-three {
+    background-image: url('Images/network.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.sub-event-right {
+    position: relative;
+    width: 100%;
+    border: 1px solid #A69286;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+}
+
+.sub-event-text-head {
+    position: relative;
+    width: 100%;
+    text-transform: capitalize;
+    text-align: center;
+}
+.sub-event-text-head a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+
+.sub-event-text {
+    position: relative;
+    font-weight: lighter;
+    width: 100%;
+    font-style: italic;
+    padding: 1.5% 0;
+    color: white;
+}
+
+.sub-event-date {
+    position: relative;
+    font-weight: bold;
+    font-size: 0.825rem;
+    text-transform: uppercase;
+}
+/******************************ANNOUNCEMENT STYLING*************************/
+.annoumcement {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    background-color: #BF843B;
+    color: white;
+}
+
+.news {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    
+}
+
+.news-card {
+    position: relative;
+    width: 23%;
+    height: 90%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border: 1px solid #BF843B;
+    margin: 0 1.5% 0 0;
+}
+
+.news-image {
+    position: relative;
+    width: 100%;
+    height: 60%;
+}
+
+.news-image-one {
+    background-image: url('Images/graduate.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.news-image-two {
+    background-image: url('Images/wound.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.news-image-three {
+    background-image: url('Images/kids.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.news-image-four {
+    background-image: url('Images/matric.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.news-text {
+    position: relative;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.main-news-text {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 80%;
+    font-size: 1rem;
+    overflow-y: auto;
+}
+
+.news-strong {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.news-anchor {
+    position: relative;
+    width: 100%;
+    height: 20%;
+    text-align: center;   
+}
+
+.news-anchor a {
+    position: relative;
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+
+/******************************GALLERY STYLING*************************/
+.gallery {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    background-color: #A69286;
+}
+
+.picture-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+   
+}
+
+.album {
+    position: relative;
+    width: 23%;
+    height: 90%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border: 1px solid #BF843B;
+    margin: 0 1.5% 0 0;
+}
+
+.album:before { /* Overlay */
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+  
+}
+.album * {
+    position: relative; /* Makes elements display above overlay. */
+}
+
+.album-description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #2C2940;
+    color: #BF843B;
+    text-align: center;
+    width:100%;
+    height:100%;
+    transition: all .7s ease-in-out;
+    padding: 20px;
+    box-sizing: border-box;
+    clip-path: inset(100% 0 100% 0); 
+}
+.album:hover .album-description {
+    left:0px;
+    transition: all .7s ease-in-out;
+    clip-path: inset(0);
+}
+
+.album-description a {
+    text-decoration: none;
+    color: white;
+    text-decoration: underline;
+}
+
+.one {
+    background-image: url('Images/graduation.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.two {
+    background-image: url('Images/summer.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.three {
+    background-image: url('Images/seminar.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.four {
+    background-image: url('Images/hall.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/******************************FOOTER STYLING*************************/
+footer {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: #BF843B;
+}
+
+footer h4 {
+    position: relative;
+    color: white;
+    font-size: 1rem;
+}

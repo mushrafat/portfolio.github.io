@@ -1,0 +1,253 @@
+/************************************HEADER RESPONSIVE STYLING**********/
+
+/********************LARGE SCREEN SIZE ****************/
+
+
+@media only screen and (min-width: 1200px) {
+    /***********************HEADER STYLING ***************************/
+    header {
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        height: 10%;
+    }
+
+    .logo {
+        flex: 30%;
+        width: 30%;
+        height: 100%;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+
+    .logo img {
+        width: 30%;
+        height: auto;
+        margin-right: 4%;
+    }
+
+    .logo-text {
+        width: 66%;
+        padding: 10% 0 0 0;
+        border-left: 1px solid white;
+        font-size: 1rem;
+
+    }
+
+    nav {
+        flex: 70%;
+        width: 70%;
+        height: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        align-items: baseline;
+    }
+    
+    .nav-spacing {
+        padding: 2.25% 0;
+        width: 16%;
+    }
+    
+    .sub-nav {
+        width: 16%;
+        padding: 2.25% 0;
+    }
+
+    .drop-links { 
+        min-width: 150%;
+        margin: 15% 0;  
+        padding: 2.25% 0%;
+    }  
+    
+    /*****************************BANNER STYLING**********************/
+    .banner {   
+        height: 90%;
+    }
+    .login-form {
+        width: 20%;
+    }
+
+    /******************************MEDIA PAGE STYLING*************************/
+    /******************************EVENTS STYLING*************************/
+    .events {
+        height: 60%;
+        flex-flow: row wrap;
+        font-size: 0.75rem;
+    }
+
+
+    .head-event {
+        position: relative;
+        width: 50%;
+        height: 100%;
+        
+    }
+
+    .head-event-title {
+       height: 7%;
+       margin: 0 0 1% 0;
+    }
+
+    .head-event-image {
+        width: 100%;
+        height: 55%;
+    }
+
+    .head-event-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .head-event-text {
+        height: 35%;
+    }
+
+    .head-event-text h3 {
+        height: 15%;
+    }
+
+    .head-main-text {
+       height: 35%;
+    }
+
+    .head-date {
+       height: 20%;
+    }
+
+    .more-link {
+        height: 25%;
+    }
+
+
+    .sub-event {
+        width: 50%;
+        flex-flow: column wrap; 
+        height: 100%;  
+        font-size: 0.75rem;
+    }
+
+    .sub-event-title {
+        height: 7%;
+    }
+
+    .sub-event-div {
+        border: 1px solid white;
+        flex-flow: row wrap;
+        height: 29%;
+    }
+
+    .sub-event-left {
+        width: 20%;
+        height: 100%;
+        border: 1px solid #BF843B;
+    }
+
+    .sub-event-left img {
+        width: 100%;
+        height: auto;
+    }
+
+    .sub-event-right {
+        width: 80%;
+        height: 100%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: space-between;
+    }
+
+    .sub-event-text-head {
+        position: relative;
+        width: 100%;
+        height: 20%;
+        text-transform: capitalize;
+        text-align: center;
+    }
+    .sub-event-text-head a {
+        position: relative;
+        text-decoration: none;
+        color: white;
+    }
+
+    .sub-event-text {
+        position: relative;
+        font-weight: lighter;
+        width: 100%;
+        height: 60%;
+        font-style: italic;
+        padding: 1.5% 0;
+        color: white;
+    }
+
+    .sub-event-date {
+        position: relative;
+        font-weight: bold;
+        font-size: 0.825rem;
+        text-transform: uppercase;
+        height: 20%;
+       
+    }
+    /******************************ANNOUNCEMENT STYLING*************************/
+    .main-news-text {
+        text-align: center;
+        position: relative;
+        width: 100%;
+        height: 80%;
+        font-size: 1rem;
+        overflow-y: visible;
+    }
+
+
+    /******************************FOOTER STYLING*************************/
+    footer {
+       height: 5%;
+    }
+}
+
+/***************************** TABLET SCREEN SIZE ************************/
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+    /***********************HEADER STYLING ***************************/  
+    .logo {
+        flex-flow: row wrap;
+        
+    }
+    
+    .logo img {
+        width: 40%;
+    }
+    
+    .logo-text {   
+        width: 58%;
+        margin-left: 2%;
+    }
+    
+    nav {
+        width: 100%;
+        flex-flow: row wrap;
+    }
+    
+    .nav-spacing {
+        padding: 2.25% 0;
+        width: 16%;
+    }
+    
+    .sub-nav {
+        width: 16%;
+        padding: 2.25% 0;
+    }
+
+    .drop-links { 
+        min-width: 150%;
+        margin: 15% 0;  
+        padding: 2.25% 0%;
+    }  
+
+    /*****************************BANNER STYLING**********************/
+
+    .login-form {
+        width: 30%;
+    }
+
+}

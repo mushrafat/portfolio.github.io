@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clock</title>
+    <link rel="stylesheet" href="clock.css" type="text/css">
+    <script src="clock.js"></script>
+    <script src="display.js"></script>  
+</head>
+
+<body>
+    <header>
+        <h1>World Clock</h1>
+        <!--Create Clock Frames-->
+        <div class="clockFrame" id="clockFrameContainer">
+            <div class="localClock Africa Ghana GMT0" id="clockContainer">
+                <div class="circle" id="canvasCircle">
+                    <canvas id="clockCanvas0" class="clockCanvas " width="160" height="160" ></canvas>   
+                </div>
+                <div class="flag"><img src="Images/Flags/ghana.png" alt="" class="image"></div>
+                <div class="info">
+                    <p class="country digitalClock" id="clockDescription0">Ghana</p>
+                    <p class="day" id="0"></p>
+                </div>
+            </div>
+
+            <div class="localClock Asia Russia GMT3" id="clockContainer">
+                <div class="circle" id="canvasCircle">
+                    <canvas id="clockCanvas1" class="clockCanvas" width="160" height="160" ></canvas>   
+                </div>
+                <div class="flag"><img src="Images/Flags/russia.png" alt="" class="image"></div>
+                <div class="info">
+                    <p class="country digitalClock" id="clockDescription1">Russia</p>
+                    <p class="day" id="3">ghn</p>
+                </div>
+            </div>
+
+            <div class="localClock Australia Sydney GMT10" id="clockContainer">
+                <div class="circle" id="canvasCircle">
+                    <canvas id="clockCanvas2" class="clockCanvas" width="160" height="160" ></canvas>   
+                </div>
+                <div class="flag"><img src="Images/Flags/australia.png" alt="" class="image"></div>
+                <div class="info">
+                    <p class="country digitalClock" id="clockDescription2">Australia</p>
+                    <p class="day" id="10"></p>
+                </div>
+            </div>
+
+            <div class="localClock base" id="baseClockContainer">
+                <div class="circle" id="canvasCircle">
+                    <img src="" id="baseImage" class="baseImage imgCanvas" width="160" height="160" >   
+                </div>
+                
+                <div class="baseInfo">
+                    <p class="country digitalClock" id="baseClockDescription">Country</p>
+                    <p class="day" id="baseId">ghn</p>
+                </div>
+            </div>
+
+            <div class="localClock Europe England GMT1 " id="clockContainer">
+                <div class="circle" id="canvasCircle">
+                    <canvas id="clockCanvas3" class="clockCanvas" width="160" height="160" ></canvas>   
+                </div>
+                <div class="flag"><img src="Images/Flags/united-kingdom.png" alt="" class="image"></div>
+                <div class="info">
+                    <p class="country digitalClock" id="clockDescription3">London</p>
+                    <p class="day" id="1">ghn</p>
+                </div>
+            </div>
+
+            <div class="localClock northAmerica USA GMT-4" id="clockContainer">
+                <div class="circle" id="canvasCircle">
+                    <canvas id="clockCanvas4" class="clockCanvas" width="160" height="160" ></canvas>   
+                </div>
+                <div class="flag"><img src="Images/Flags/united-states.png" alt="" class="image"></div>
+                <div class="info">
+                    <p class="country digitalClock" id="clockDescription4">New York</p>
+                    <p class="day" id="-4">ghn</p>
+                </div>
+            </div>
+
+            <div class="localClock southAmerica Brazil UTC-3" id="clockContainer">
+                    <div class="circle" id="canvasCircle">
+                        <canvas id="clockCanvas5" class="clockCanvas" width="160" height="160" ></canvas>   
+                    </div>
+                    <div class="flag"><img src="Images/Flags/brazil.png" alt="" class="image"></div>
+                    <div class="info">
+                        <p class="country digitalClock" id="clockDescription5">Brazil</p>
+                        <p class="day" id="-3">ghn</p>
+                    </div>
+            </div>
+        </div> 
+    </header>
+
+    <section class="map"></section>
+<!--Create Drop down countries-->
+    <section class="picker" >
+        <div>
+            <p class="displayTime">Choose Country</p>
+        </div>
+
+        <div>
+            <select id="selectCountry" name="country" class="dropDown">
+                <option name="country" id="4.3" value="Afghanistan">Afghanistan</option>
+                <option name="country" id="2" value="Albania">Albania</option>
+                <option name="country" id="1" value="Algeria">Algeria</option>
+                <option name="country" id="2" value="Andorra">Andorra</option>
+                <option name="country" id="1" value="Angola">Angola</option>
+                <option name="country" id="-4" value="Antigua & Barbuda">Antigua & Barbuda</option>
+                <option name="country" id="-3" value="Argentina">Argentina</option>
+                <option name="country" id="4" value="Armenia">Armenia</option>
+                <option name="country" id="2" value="Austria">Austria</option>
+                <option name="country" id="4" value="Azerbaijan">Azerbaijan</option>
+                <option name="country" id="-4" value="Bahamas">Bahamas</option>
+                <option name="country" id="3" value="Bahrain">Bahrain</option>
+                <option name="country" id="6" value="Bangladesh">Bangladesh</option>
+                <option name="country" id="-4" value="Barbados">Barbados</option>
+                <option name="country" id="3" value="Belarus">Belarus</option>
+                <option name="country" id="2" value="Belgium">Belgium</option>
+                <option name="country" id="-6" value="Belize">Belize</option>
+                <option name="country" id="1" value="Benin">Benin</option>
+                <option name="country" id="6" value="Bhutan">Bhutan</option>
+                <option name="country" id="-4" value="Bolivia">Bolivia</option>
+                <option name="country" id="2" value="Botswana">Botswana</option>
+                <option name="country" id="8" value="Brunei">Brunei</option>
+                <option name="country" id="3" value="Bulgaria">Bulgaria</option>
+                <option name="country" id="0" value="Burkina Faso">Burkina Faso</option>
+                <option name="country" id="2" value="Burundi">Burundi</option>
+                <option name="country" id="7" value="Cambodia">Cambodia</option>
+                <option name="country" id="1" value="Cameroon">Cameroon</option>
+                <option name="country" id="1" value="Central African Republic">Central African Republic</option>
+                <option name="country" id="1" value="Chad">Chad</option>
+                <option name="country" id="-3" value="Chile">Chile</option>
+                <option name="country" id="8" value="China">China</option>
+                <option name="country" id="-5" value="Colombia">Colombia</option>
+                <option name="country" id="3" value="Comoros">Comoros</option>
+                <option name="country" id="2" value="Congo">Congo</option>
+                <option name="country" id="0" value="Cote DIvoire">Cote DIvoire</option>
+                <option name="country" id="2" value="Denmark">Denmark</option>
+                <option name="country" id="3" value="Djibouti">Djibouti</option>
+                <option name="country" id="-4" value="Dominica">Dominica</option>    
+                <option name="country" id="-5" value="Ecuador">Ecuador</option>
+                <option name="country" id="2" value="Egypt">Egypt</option>         
+                <option name="country" id="3" value="Ethiopia">Ethiopia</option>           
+                <option name="country" id="3" value="Finland">Finland</option>
+                <option name="country" id="2" value="France">France</option>            
+                <option name="country" id="1" value="Gabon">Gabon</option>
+                <option name="country" id="0" value="Gambia">Gambia</option>          
+                <option name="country" id="1" value="Nigeria">Nigeria</option>
+                <option name="country" id="2" value="Ukraine">Ukraine</option>      
+                <option name="country" id="7" value="Vietnam">Vietnam</option>
+                <option name="country" id="3" value="Yemen">Yemen</option>
+                <option name="country" id="2" value="Zambia">Zambia</option>
+                <option name="country" id="2" value="Zimbabwe">Zimbabwe</option>
+           
+           
+            </select> 
+
+            
+        </div>       
+    </section>
+</body>
+</html>

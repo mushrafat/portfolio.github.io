@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-size: 16px;
+    font-family: "Karla", Helvetica, Arial, sans-serif;
+    background-color: #F2F2F2;
+    color: #F2F2F2;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+.flex-style  {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;  
+}
+
+.login-details,
+.login-button,
+.signup-details,
+.signup-button {
+    outline: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  -webkit-appearance: none;
+}
+
+input[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+.main-page {
+    width: 100%;
+    justify-content: center;
+}
+
+.page-division {
+    width: 100%;
+    justify-content: center;
+}
+
+/*******About Site Section*******/
+.left-page {
+    flex-direction: column;
+    justify-content: flex-start;
+    background-image: url('../Images/living-room.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgba(255, 255, 255, 0.9);
+    padding: 0 1% 15% 1%;
+}
+
+.logo {
+    width: 100%;
+    margin: 0 0 15% 0;
+}
+
+.logo a {
+    text-decoration: none;
+    border: none;
+}
+
+.logo img {
+    height: auto;
+    width: 15%;
+}
+
+.about-site {
+    margin: auto;
+    width: 100%;
+}
+
+.about-site h4 {
+    margin: auto;
+    width: 80%;
+    padding: 3%;
+    text-align: center;
+    border: 1px solid #403F3D80;
+    background-color: #40322180;
+    color: #F2F2F2;
+    font-weight: lighter;
+}
+
+.page-lead {
+    color: #F2F2F2;
+    font-weight: bolder;
+}
+
+/*******Form Section*******/
+.right-page {
+    color: #F2F2F2;
+}
+
+/*******Login Section*******/
+.login {
+    width: 100%;
+}
+
+.login-form {
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 5% 0;
+}
+
+.login-field {
+    background-color: white;
+    border: 1px solid #cac3c3; 
+}
+
+.login-field, 
+.login-button {
+    margin: 1%  auto;
+    width: 80%;
+}
+
+.login-details {
+    border: none;
+    text-decoration: none;
+    border-left: 1px solid #cac3c3;
+    flex-grow: 1; 
+    padding: 0 5%; 
+}
+
+
+.login-field i,
+.signup-field i {
+    color:#cac3c3;
+    background-color: white;
+}
+
+.login-details,
+.signup-details {
+    color: #403221;
+}
+
+/*******Sign Up Section***#838688***/
+.signup {
+    width: 100%;
+}
+
+.signup-form {
+    margin: auto;
+    padding: 2%;
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid #048C8C;
+}
+
+.signup-form h4 {
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    color: #403221;
+    background-color: #F2F2F2;
+}
+
+.signup-form h4,
+.signup-terms {
+    padding: 2% 0;
+    margin: 0 0 2% 0;
+}
+
+.signup-field,
+.signup-button,
+.signup-terms {
+    margin: 2% 0;
+}
+
+.signup-field {
+    border: 1px solid #cac3c3;
+    background-color: white; 
+}
+
+.signup-field i {
+    align-self: center;
+}
+
+.signup-details {
+    border: none;
+    width: 60%;
+    text-decoration: none;
+    flex-grow: 1;
+    border-left: 1px solid #cac3c3;
+    padding: 0 5%;
+}
+
+.signup-button {
+    padding: 1%;
+}
+
+.signup-terms {
+    width: 100%;
+    text-align: center;
+    color: #403221;
+}
+
+.signup-terms, 
+.signup-terms a,
+footer,
+footer a {
+    color: #403221;
+}
+
+footer {
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 5% 0;
+}
+
+::placeholder {
+    color: #4d4949;
+    
+}
+
+/*All Buttons 3D Styling*/
+.login-button,
+.signup-button {
+	border-radius: 4px;
+	border: none;
+	text-decoration: none;
+	padding: 1%;  
+    cursor: pointer;
+	/*Backgrond image declared multiple times to support cross browser compatibility*/
+    background-image: -moz-linear-gradient(270deg, #a59f9f 0%, #cac3c3 100%); /* ff3.6+ */
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a59f9f), color-stop(100%, #cac3c3)); /* safari4+,chrome */
+    background-image: -webkit-linear-gradient(270deg, #a59f9f 0%, #cac3c3 100%); /* safari5.1+,chrome10+ */
+    background-image: -o-linear-gradient(270deg, #a59f9f 0%, #cac3c3 100%); /* opera 11.10+ */
+    background-image: -ms-linear-gradient(270deg, #a59f9f 0%, #cac3c3 100%); /* ie10+ */
+    background-image: linear-gradient(180deg, #a59f9f 0%, #cac3c3 100%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a59f9f', endColorstr='#cac3c3',GradientType=0 ); /* ie6-9 */
+    
+    /*Border radius declared multiple times to support cross browser compatibility*/
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    text-shadow: 0px 1px 0px #00000080;
+    
+    /*Box shadow declared multiple times to support cross browser compatibility*/
+    -webkit-box-shadow: 0px 4px 0px #4d4949, 0px 2px 15px #00000066, inset 0px 1px 0px #ffffff4d, inset 0px 0px 2px #ffffff80;
+    -moz-box-shadow: 0px 4px 0px #4d4949, 0px 2px 15px #00000066, inset 0px 1px 0px #ffffff4d, inset 0px 0px 2px #ffffff80;
+    box-shadow: 0px 4px 0px #4d4949, 0px 2px 15px #00000066, inset 0px 1px 0px #ffffff4d, inset 0px 0px 2px #ffffff80;
+
+}
+
+.login-button:hover,
+.signup-button:hover {
+	/*Background image declared multiple times to support cross compatibility across browsers*/
+    background-image: -moz-linear-gradient(90deg, #d8d0d0 0%, #cec5c5 100%); 
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cec5c5), color-stop(100%, #d8d0d0));
+    background-image: -webkit-linear-gradient(90deg, #d8d0d0 0%, #cec5c5 100%);
+    background-image: -o-linear-gradient(90deg, #d8d0d0 0%, #cec5c5 100%);
+    background-image: -ms-linear-gradient(90deg, #d8d0d0 0%, #cec5c5 100%);
+    background-image: linear-gradient(0deg, #d8d0d0 0%, #cec5c5 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cec5c5', endColorstr='#d8d0d0',GradientType=0 ); 
+ 
+}
+.login-button:active,
+.signup-button:active {
+	/*Background property is declared multiple times to support cross compatibility across browsers*/
+    background-image: -moz-linear-gradient(270deg, #beb8b8 0%, #beb8b8 100%); /* ff3.6+ */
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #beb8b8), color-stop(100%, #beb8b8)); /* safari4+,chrome */
+    background-image: -webkit-linear-gradient(270deg, #beb8b8 0%, #beb8b8 100%); /* safari5.1+,chrome10+ */
+    background-image: -o-linear-gradient(270deg,#beb8b8 0%, #beb8b8 100%); /* opera 11.10+ */
+    background-image: -ms-linear-gradient(270deg, #beb8b8 0%, #beb8b8 100%); /* ie10+ */
+    background-image: linear-gradient(180deg, #beb8b8 0%, #beb8b8 100%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#beb8b8', endColorstr='#4c6102',GradientType=0 ); /* ie6-9 */
+    
+    /*Box-shadow property is declared multiple times to support cross compatibility across browsers*/
+    -webkit-box-shadow: 0px 1.3px 0px #8f8b8b, 0px 0.625px 5px #00000066, inset 0px 1px 0px #ffffff4d, inset 0px 0px 2px #ffffff80;
+    -moz-box-shadow: 0px 1.3px 0px #8f8b8b, 0px 0.625px 5px #00000066, inset 0px 1px 0px #ffffff4d, inset 0px 0px 2px #ffffff80;
+    box-shadow: 0px 1.3px 0px #8f8b8b, 0px 0.625px 5px #00000066, inset 0px 1px 0px #ffffff4d, inset 0px 0px 2px #ffffff80;
+    
+    /*Transform property is declared multiple times to support cross compatibility across browsers*/
+    -webkit-transform: translate(0, 2.7px);
+    -moz-transform: translate(0, 2.7px);
+    transform: translate(0, 2.7px);
+}

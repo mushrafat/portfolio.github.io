@@ -1,0 +1,73 @@
+@media only screen and (min-width: 800px) {
+    /*******About Site Section*******/
+    .main-page {
+        width: 100%;
+        min-height: 100vh; 
+    }
+
+    .page-division {
+        width: 50%;
+    }
+
+    .left-page {
+        padding: 0;
+    }
+
+    .logo {
+        margin: 0;
+    }
+
+    /*******Login Section*******/
+    .login-form {
+        flex-direction: row;
+        padding: 2% 0;
+    }
+
+    .login-field {
+        width: 30%;
+    }
+
+    .login-details {
+        width: 60%;
+    }
+
+    .login-field i {
+       align-self: center;   
+    }
+
+    .login-button {
+        width: 20%;
+    }
+
+    /*******Sign Up Section*******/
+    .signup-form {
+        flex-direction: row;
+        background-color: #048C8C;
+        border: none;
+        padding: 0;
+    }
+
+    .signup-field,
+    .signup-button {
+        width: 45%;
+    }
+
+    .signup-field,
+    .signup-button,
+    .signup-terms {
+        margin: 2%;
+    }
+    
+    .signup-field i {
+        padding: 2% 0; 
+    }
+
+    .signup-terms, .signup-terms a {
+        color: #F2F2F2;
+    }
+    
+    /*******Sign Up Section*******/
+    footer {
+        padding:  0;
+    }
+}
